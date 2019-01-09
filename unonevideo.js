@@ -46,11 +46,12 @@ function gen1() {
     var bh1 = uij.search("=");
     var vn1 = uij.slice(bh1 + 1, bh);
     function om() {
-        for (var i = 0; i < 41; i++) {
+        for (var i = 0; i < 100; i++) {
             var url1 = "https://player.uacdn.net/lesson-raw/" + vn1 + "/images/webp/w768/" + i + ".webp";
             var x = document.createElement("IMG");
             x.setAttribute("class", "out23");
             x.setAttribute("src", url1);
+             x.setAttribute("onerror", "this.style.display='none'");
             x.setAttribute("width", "100%");
             document.body.appendChild(x);
         }
