@@ -42,6 +42,7 @@ function gen1() {
             var x = document.createElement("IMG");
             x.setAttribute("class", "out23");
             x.setAttribute("src", url1);
+            x.setAttribute("onerror", "this.style.display='none'");
             x.setAttribute("width", "100%");
             document.body.appendChild(x);
         }
